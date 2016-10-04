@@ -1,73 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:id="@+id/drawer_layout">
 
-    <!--<com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="250dp">
-    </com.daimajia.slider.library.SliderLayout>-->
-
-    <com.uncopt.android.widget.text.justify.JustifiedTextView
-        android:id="@+id/txtJutificado"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#ff666666"
-        android:textSize="16dp"
-        android:focusable="true"
-        android:focusableInTouchMode="false"
-        android:text="@string/contenido">
-    </com.uncopt.android.widget.text.justify.JustifiedTextView>
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/seguir"
-        android:layout_marginBottom="40dp"
-        android:id="@+id/textView"
-        android:layout_above="@+id/fb"
-        android:layout_alignParentStart="true" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ppal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_collapseMode="pin">
+        </android.support.v7.widget.Toolbar>
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/facebook2"
-        android:id="@+id/fb"
-        android:layout_marginEnd="48dp"
-        android:layout_alignTop="@+id/tw"
-        android:layout_toStartOf="@+id/tw" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content_frame2">
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/instagram2"
-        android:id="@+id/in"
-        android:layout_marginStart="40dp"
-        android:layout_alignTop="@+id/tw"
-        android:layout_toEndOf="@+id/textView" />
+        </FrameLayout>
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/twitter"
-        android:id="@+id/tw"
-        android:layout_marginBottom="134dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+    </LinearLayout>
 
-
-
-
-
-
-</RelativeLayout>
-
+</android.support.v4.widget.DrawerLayout>
 
