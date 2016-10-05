@@ -65,7 +65,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/facebook2"
+                android:src="@drawable/fb"
                 android:id="@+id/fb"
                 android:background="@null"/>
 
@@ -73,7 +73,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/instagram2"
+                android:src="@drawable/it"
                 android:id="@+id/in"
                 android:background="@null"/>
 
@@ -81,7 +81,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/twitter"
+                android:src="@drawable/tw"
                 android:id="@+id/tw"
                 android:background="@null"/>
 
